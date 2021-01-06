@@ -1,0 +1,160 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, I am the COVID-19 Response Chatbot", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "byeeee"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "Goodbye and Stay safe!","Its my honour to help you", "Thank you for talking to me,have a nice day." ],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "Info",
+                "patterns": ["Who Created you"],
+                "responses": ["Erin and Ioannis"],
+                "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "QNA",
+                "patterns": ["How are you"],
+                "responses": ["I am well How are you?", "I am fine"],
+                "context": [""]
+        },
+        {"tag": "QNA2",
+                "patterns": ["I feel unwell", "I am not good", "Not so good"],
+                "responses": ["Oh sorry to hear that, what symptoms do you have?"],
+                "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am here to provide updates and information about COVID-19"],
+         "context": [""]
+        },
+        {"tag": "Lockdown",
+         "patterns": ["Are there any lockdown regulations?", "Covid Regulations in my area"],
+         "responses": ["You can find all lockdown info on LINK LINK LINK"],
+         "context": [""]
+        },
+        {"tag": "What Tier am I in?",
+         "patterns": ["Current Tier for Southampton?", "Current Covid tier", "What to do in tier 1", "Tier 2", "Tier 3", "Tier 4"],
+         "responses": ["To find out your tier - please visit https://www.gov.uk/find-coronavirus-local-restrictions and type in your postcode "],
+         "context": [""]
+        },
+        {"tag": "covid symptoms help",
+         "patterns": ["what symptoms should worry me", "Covid Symptoms", "Show me covid symptoms", "I have a cough is that a symptom?", "find the covid symptoms" ],
+         "responses": ["The main symptoms of coronavirus (COVID-19) are a high temperature, a new, continuous cough and a loss or change to your sense of smell or taste. A full list of possible symptoms can be found here - who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19"],
+         "context": ["Symptoms"]
+        },
+        {"tag": "Covid-19 info",
+                "patterns": ["Covid-19 ", "What is Covid-19", "Information on Covid 19", "What is coronavirus"],
+                "responses": ["COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2"],
+                "context": ["Information"]
+        },
+        {"tag": "Covid-19 Risk",
+                "patterns": ["Who is most at risk form covid-19", "Are my grandparents in danger?"],
+                "responses": ["People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness. However, anyone can get sick with COVID-19 and become seriously ill or die at any age."],
+                "context": [""]
+        },
+        {"tag": "Isolation",
+                "patterns": ["When do I have to self isolate"],
+                "responses": ["If you have any symptoms of coronavirus (a high temperature, a new, continuous cough or a loss or change to your sense of smell or taste) If you have any of the sysmptoms for Coronavirus, or have been in contact resently with someone that has or may have the virus it is better you isolate at your home."],
+                "context": ["Information"]
+        },
+        {"tag": "Testing",
+                "patterns": ["When do I have to get a test?", "Should I be tested?" ],
+                "responses": ["Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance."],
+                "context": ["Testing"]
+        },
+        {"tag": "Symptoms",
+         "patterns": [],
+         "responses": ["Your symptoms advide you should visit a hospital", "The nearest hospital is:"],
+         "context": [""]
+        },
+        {"tag": "Testing",
+                "patterns": ["Where can I get a test", "Testing Locations"],
+                "responses": ["You can order a test or book a test in here - https://www.gov.uk/get-coronavirus-test ","For tasting information about locations near you you could visit: https://www.gov.uk/get-coronavirus-test"],
+                "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        } ,
+        
+        {"tag": "Lockdown",
+                "patterns": ["Are there any lockdown regulations?", "Covid Regulations in my area"],
+                "responses": ["You can find all lockdown info for England on https://www.gov.uk/guidance/national-lockdown-stay-at-home"],
+                "context": [""]
+        },
+        {"tag": "What Tier am I in?",
+        "patterns": ["Current Tier for Southampton?", "Current Covid tier", "What can I do in tier 1","What can I do in tier 2 ","What can I do in tier 3","What can I do in tier 4"],
+        "responses": ["You can find tier information here: please visit https://www.gov.uk/find-coronavirus-local-restrictions and type in your postcode ", 
+                "full details of what you can do in tier 1 can be found here - https://www.gov.uk/guidance/tier-1-medium-alert",
+                "full details of what you can do in tier 2 can be found here - https://www.gov.uk/guidance/tier-2-high-alert",
+                "full details of what you can do in tier 3 can be found here - https://www.gov.uk/guidance/tier-3-very-high-alert",
+                "full details of what you can do in tier 4 can be found here - https://www.gov.uk/guidance/tier-4-stay-at-home",
+                "details about these tiers can be found here - https://www.gov.uk/guidance/local-restriction-tiers-what-you-need-to-know?priority-taxon=774cee22-d896-44c1-a611-e3109cce8eae", 
+                "you can visit - https://www.gov.uk/guidance/full-list-of-local-restriction-tiers-by-area - to find a full list of the areas and what tier they fall under. "],
+        "context": [""]
+        },
+        {"tag": "Myths",
+                "patterns": ["What are the myths around coronavirus"],
+                "responses": ["There are quite a few different myths around coronavirus - There can be found here for details - https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters", ""],
+                "context": [""]
+                },
+        {"tag": "DaytoDay",
+                "patterns": ["Can my business remain open","Can I travel to another country","Can I get support for my business","Are Schools open","Can I still go to work","Do I still get paid if I dont go to work"],
+                "responses": ["Depending on the tier you are in - depends on whether your business can remain open or not. Full details on  the restriction for different businesses can be found here - https://www.gov.uk/guidance/working-safely-during-coronavirus-covid-19?priority-taxon=774cee22-d896-44c1-a611-e3109cce8eae",
+                "A full checklist of what do to before, during and after travel can be found here - https://www.gov.uk/guidance/travel-advice-novel-coronavirus. You also need to check the country you are travelling to for their advice on quarantine on arrival.",
+                "All details of the support you can receive is detailed here - https://www.gov.uk/coronavirus/business-support",
+                "The latest update can be found here - https://www.gov.uk/guidance/national-lockdown-stay-at-home#going-to-school-college-and-university",
+                "Depending on your tier, depends if you can still go to work. To find out your tier and more details regarding this, please visit https://www.gov.uk/guidance/local-restriction-tiers-what-you-need-to-know?priority-taxon=774cee22-d896-44c1-a611-e3109cce8eae",
+                "You will receive statutory sick pay for the time you are off work and may also be eligible for test and trace support payment. Full details of the finical support available can be found here - https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-youre-employed-and-cannot-work"],
+                "context": [""]
+        },
+        {"tag": "Vaccine",
+                "patterns": ["When will I get my vaccine","Who can get the vaccine first","More information about the vaccine"],
+                "responses": ["All the latest information about the vaccine can be found here - https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/coronavirus-vaccine/"],
+                "context": [""]
+        },
+        {"tag": "Track and Trace",
+                "patterns": ["What is Track and Trace","How do I download it","What do the notifications mean"],
+                "responses": ["All the information about the Track and Trace app can be found here - https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works"],
+                "context": [""]
+        },
+        {"tag": "Updates",
+                "patterns": ["Where can I find the latest update for the uk","Where can I find the latest updates for the rest of the world? ","How many new cases are there today "],
+                "responses": ["The latest updates for UK can be found here - https://www.gov.uk/coronavirus ","The latest updates for the whole world - https://covid19.who.int/","Case updates can be found here - https://coronavirus.data.gov.uk/details/cases "],
+                "context": [""]
+        }
+   ]
+}
